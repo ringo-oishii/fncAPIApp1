@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>0806</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css'>
+<link rel='stylesheet' href='https://unpkg.com/@mdi/font@6.x/css/materialdesignicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Vueで指定された"app"要素、この中でのみVueが有効 -->
+<div id="app">
+  <v-app>
+    <v-content style="background-color:#FBF9C2">
+      <v-container>
+        <v-row
+          class="text-h3 mb-3 mt-3"
+          justify="center"
+          color="#E45479"
+          >
+          What do you want to eat?
+        </v-row>
+        
+        
+        <v-row
+          class="mb-3 mt-3"
+          align="center"
+          justify="center"
+          >
+          <v-col 
+            cols="4"            
+            >
+            <v-text-field
+              class="ml-6 mr-6"
+              label="IDを入力…"
+              v-model:value="ID"
+              filled
+              color="#6389D1"
+            ></v-text-field>            
+          </v-col>
+            <v-col 
+            cols="6"            
+            >
+            <v-text-field
+              class="ml-6 mr-6"
+              label="Nameを入力…"
+              v-model:value="Name"
+              filled
+              color="#6389D1"
+            ></v-text-field>
+          </v-col>
+               <v-col 
+            cols="5"            
+            >
+            <v-text-field
+              class="ml-6 mr-6"
+              label="Locationを入力…"
+              v-model:value="Location"
+              filled
+              color="#6389D1"
+            ></v-text-field>
+          </v-col>
+          <v-col 
+            cols="5"            
+            >
+              <v-text-field
+              class="ml-6 mr-6"
+              label="Styleを入力…"
+              v-model:value="Style"
+              filled
+              color="#6389D1"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+        <v-row
+          class="mb-3 mt-3"
+          align="center"
+          justify="center"
+          style="color:#4D4766"
+          borderline
+          >
+        内容<br>
+          ID: {{ ID }} Name: {{ Name }}<br>
+          Location: {{ Location }} Style: {{ Style }}
+          </v-row>
+          <v-row
+          class="mb-3 mt-3"
+          align="center"
+          justify="center"
+          >
+          <v-btn v-on:click="addData"               
+               dark
+               small               
+               color="#E45479"
+               >keep
+               </v-btn>
+        </v-row>
+        <v-row
+          class="mb-3 mt-3"
+          justify="center"
+          > 
+          <v-btn v-on:click="readData" 
+               dark
+               small               
+               color="#6389D1"
+               >view
+               </v-btn>
+        </v-row>
+        <v-row 
+          class="mb-3 mt-3"
+          justify="center"
+          v-for="data in dataList">
+          ID:{{ data.ID }},Name:{{ data.Name }},Location:{{ data.Location}}
+        </v-row>
+      </v-container>
+    </v-contentbackground-color>
+  </v-app>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

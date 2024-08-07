@@ -22,8 +22,8 @@ const app = new Vue({
       //POSTメソッドで送るパラメーターを作成
       const param = {
         ID : this.ID,
-        Name : this.Name
-        Location : this.Location
+        Name : this.Name,
+        Location : this.Location,
         Style : this.style
       };
       

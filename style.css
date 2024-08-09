@@ -1,3 +1,50 @@
 .text-h3 {
   color: #E45479  
 }
+
+.profile-card {
+    background-color: #FBF9C2;
+    border: 2px solid #F9DD5D;
+    border-radius: 7px;
+    padding: 10px;
+    max-width: 300px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+} 
+
+.card-contents {
+    background-color: #;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4D4766;
+    font-size: 18px;
+}
+
+
+.card-id,
+.card-name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+card-location,
+.card-style {
+    display: block;
+    margin-bottom: px;
+}
+
+.card-location::before {
+    content: '📍 ';
+}
+
+.card-style::before {
+    content: '✨ ';
+}

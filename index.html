@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>0809try</title>
+  <title>CodePen - 0806</title>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css'>
 <link rel='stylesheet' href='https://unpkg.com/@mdi/font@6.x/css/materialdesignicons.min.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'><link rel="stylesheet" href="./style.css">
@@ -81,9 +81,16 @@
           style="color:#4D4766"
           borderline
           >
-        内容<br>
-          ID: {{ ID }} Name: {{ Name }}<br>
-          Location: {{ Location }} Style: {{ Style }}
+
+         <div class="profile-card">
+    <div class="card-contents">
+        <span class="card-id">ID: {{ ID }}</span>
+        <span class="card-name">Name: {{ Name }}</span>
+        <span class="card-location">Location: {{ Location }}</span>
+        <span class="card-style">Style: {{ Style }}</span>
+    </div>
+</div>
+
           </v-row>
           <v-row
           class="mb-3 mt-3"
@@ -108,12 +115,17 @@
                >view
                </v-btn>
         </v-row>
-        <v-row 
-          class="mb-3 mt-3"
-          justify="center"
-          v-for="data in dataList">
-          ID:{{ data.ID }},Name:{{ data.Name }},Location:{{ data.Location}}, Style:{{ data.Style }}
-        </v-row>
+        
+        <div class="profile-card">
+    <div class="card-contents">
+        <span class="card-id">ID: {{ ID }}</span>
+        <span class="card-name">Name: {{ Name }}</span>
+        <span class="card-location">Location: {{ Location }}</span>
+        <span class="card-style">Style: {{ Style }}</span>
+    </div>
+          
+</div>
+
       </v-container>
     </v-contentbackground-color>
   </v-app>

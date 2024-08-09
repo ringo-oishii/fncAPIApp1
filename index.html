@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>0806</title>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css'>
-<link rel='stylesheet' href='https://unpkg.com/@mdi/font@6.x/css/materialdesignicons.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <!-- Vueで指定された"app"要素、この中でのみVueが有効 -->
 <div id="app">
   <v-app>
@@ -112,16 +100,9 @@
           class="mb-3 mt-3"
           justify="center"
           v-for="data in dataList">
-          ID:{{ data.ID }},Name:{{ data.Name }},Location:{{ data.Location }}, Style:{{ data.Style }}
+          ID:{{ data.ID }},Name:{{ data.Name }},Location:{{ data.Location}}, Style:{{ data.Style }}
         </v-row>
       </v-container>
     </v-contentbackground-color>
   </v-app>
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js'></script><script  src="./script.js"></script>
-
-</body>
-</html>
